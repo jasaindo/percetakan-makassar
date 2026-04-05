@@ -71,8 +71,9 @@ export default defineConfig({
     }),
   ],
 
+  // --- SINKRONISASI GAMBAR: Menambahkan Unsplash agar build tidak merah ---
   image: {
-    domains: ['cdn.pixabay.com'],
+    domains: ['cdn.pixabay.com', 'plus.unsplash.com', 'images.unsplash.com'],
   },
 
   markdown: {
