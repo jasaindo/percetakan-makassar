@@ -1,36 +1,38 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: Percetakan Makassar
+  site: 'https://percetakan-makassar.pages.dev' # Ganti dengan URL Cloudflare Pages kamu jika sudah ada
   base: '/'
   trailingSlash: false
 
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+  googleSiteVerificationId: null # Biarkan null dulu sampai kamu punya kode dari Google Search Console
 
-# Default SEO metadata
+# Pengaturan SEO Bawaan
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: Percetakan Makassar - Jasa Cetak Kilat & Murah
+    template: '%s — Percetakan Makassar'
+  description: 'Butuh Percetakan Buku Yasin Kilat di Makassar ? Cuma di Sini Tempatnya! Kualitas Warna Tajam, Harga Teman se-Makassar. Cek Promo Hari Ini Sebelum Antrian Penuh!'
   robots:
-    index: true
-    follow: true
+    index: false
+    follow: false
   openGraph:
-    site_name: AstroWind
+    siteName: Percetakan Makassar
     images:
       - url: '~/assets/images/default.png'
         width: 1200
         height: 628
     type: website
   twitter:
-    handle: '@arthelokyo'
-    site: '@arthelokyo'
+    handle: null
+    site: null
     cardType: summary_large_image
 
+# Pengaturan Bahasa (Sinkronisasi Indonesia)
 i18n:
-  language: en
+  language: id
   textDirection: ltr
 
+# Pengaturan Fitur Blog
 apps:
   blog:
     isEnabled: true
@@ -38,27 +40,27 @@ apps:
 
     post:
       isEnabled: true
-      permalink: '/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
+      permalink: '/blog/%slug%' # Mencegah konflik dengan halaman statis
       robots:
-        index: true
+        index: false
 
     list:
       isEnabled: true
-      pathname: 'blog' # Blog main path, you can change this to "articles" (/articles)
+      pathname: 'blog'
       robots:
-        index: true
+        index: false
 
     category:
       isEnabled: true
-      pathname: 'category' # Category main path /category/some-category, you can change this to "group" (/group/some-category)
+      pathname: 'kategori' # Diubah ke bahasa Indonesia
       robots:
-        index: true
+        index: false
 
     tag:
       isEnabled: true
-      pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
+      pathname: 'tag'
       robots:
-        index: false
+        index: false # Tetap false untuk menghindari isu konten ganda (Duplicate Content) di SEO
 
     isRelatedPostsEnabled: true
     relatedPostsCount: 4
@@ -66,7 +68,7 @@ apps:
 analytics:
   vendors:
     googleAnalytics:
-      id: null # or "G-XXXXXXXXXX"
+      id: null # Isi jika kamu sudah punya ID Google Analytics
 
 ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  theme: 'system' # Mengikuti pengaturan mode gelap/terang di HP/Laptop pengunjung
