@@ -1,6 +1,6 @@
 site:
   name: Percetakan Makassar
-  site: 'https://percetakan-makassar.pages.dev' # Ganti dengan URL Cloudflare Pages kamu jika sudah ada
+  site: 'https://percetakanmakassar.web.id' # Ganti dengan URL Cloudflare Pages kamu jika sudah ada
   base: '/'
   trailingSlash: false
 
@@ -11,7 +11,7 @@ metadata:
   title:
     default: Percetakan Makassar - Jasa Cetak Kilat & Murah
     template: '%s — Percetakan Makassar'
-  description: 'Butuh Percetakan Buku Yasin Kilat di Makassar ? Cuma di Sini Tempatnya! Kualitas Warna Tajam, Harga Teman se-Makassar. Cek Promo Hari Ini Sebelum Antrian Penuh!'
+  description: 'Butuh Percetakan Kilat di Makassar ? Cuma di Sini Tempatnya! Kualitas Warna Tajam, Harga Teman se-Makassar. Cek Promo Hari Ini Sebelum Antrian Penuh!'
   robots:
     index: false
     follow: false
